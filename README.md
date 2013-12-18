@@ -1,9 +1,9 @@
-rapid-mmwr
+mmwr-surround
 ==========
 
-A prototype of tableu and JQuery UI enhanced MMWR
+A prototype of tableu and JQuery UI enhanced MMWR. This prototype will expand an existing MMWR surveillance summary with additional links and content from CDC programs, interactive figures using Tableau Public and data exports using data.cdc.gov.
 
-Issue tracker is available: TBD
+Issue tracker is available: [on JIRA](http://code.phiresearchlab.org/jira/browse/SUR)
 
 ## Goals
 To enhance some MMWR articles with Tableu style graphics and some JQueryUI fanciness.
