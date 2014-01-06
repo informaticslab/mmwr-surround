@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content_alignment {padding-left:3%; padding-right:3%;  border-style:solid; border-width:1px; border-color:#CCC;}
+
+
+#header {height:96px; width:100%; 
+background-color:#3160b6;
+background-image:url('images/head_dots.png'); background-repeat:no-repeat; }
+
+#gradient_detail {height:1px; background-color:#FFF;}
+#gradient_detail_center {height:4px; 
+background-color: #f3a23f;
+    background-image: linear-gradient(left, rgb(238,131,22) 18%, rgb(236,178,10) 59%, rgb(253,188,14) 80%);
+    background-image: -o-linear-gradient(left, rgb(238,131,22) 18%, rgb(236,178,10) 59%, rgb(253,188,14) 80%);
+    background-image: -moz-linear-gradient(left, rgb(238,131,22) 18%, rgb(236,178,10) 59%, rgb(253,188,14) 80%);
+    background-image: -webkit-linear-gradient(left, rgb(238,131,22) 18%, rgb(236,178,10) 59%, rgb(253,188,14) 80%);
+    background-image: -ms-linear-gradient(left, rgb(238,131,22) 18%, rgb(236,178,10) 59%, rgb(253,188,14) 80%);}
+
+#subheader {height:30px; background-color:#eae7e4;}
+.issue_text {font-family:helvetica, trebuchet ms, arial, sans-serif; font-size:1em; position:relative; left:1.2em; top:.5em; }
+
+#sub_line {background-color:#dddddc; height:1px;}
+.home_icon {float:right; clear:both; position:relative; padding:1.2em;}
+a.mmwr_text:link, a.mmwr_text:visited, a.mmwr_text:active {position:relative; top:2.5em; left:.7em; color:#ffffff; font-family:helvetica, trebuchet ms, arial, sans-serif; font-size:1.9em; text-decoration:none;}
+
+a.mmwr_text:hover {position:relative; top:2.5em; left:.7em; color:#ffffff; font-family:helvetica, trebuchet ms, arial, sans-serif; font-size:1.9em; text-decoration:underline;}
+
+#icon_area {float:right; clear:both; position:relative; padding-right:1em; padding-top:.7em; }
+
+h1 {font-family:helvetica, trebuchet ms, arial, sans-serif; font-size:1.7em; font-weight:normal; color:#503608; margin-bottom:30px; margin-top:70px; }
+
+p.author-name {text-align:center; font-size:1.1em; line-height:1; }
+
+body {font-family: verdana, helvetica, trebuchet ms, arial, sans-serif; font-size:.8em;}
+
+h3.serial_subtitle {text-align:center;}
+
+.bottom_info {border-style:solid; border-width:1px; border-color:#000000; padding-left:1em; padding-right:1em; }
+
+.last-reviewed, .last-updated, .content-source {color: #606162;}
+
+li {margin-bottom:7px;}
+
+.search_field {float:right; position:relative; right:1.2em; bottom:12px; }
+
+.search_type {color:#999; font-size:small;}
+
+
+
+ 
