@@ -319,7 +319,12 @@ empty{color:#000};@import "http://www.cdc.gov/TemplatePackage/css/B/wysiwyg/wysi
 <script language="Javascript" type="text/javascript">
 
 $(document).ready(function(){
-
+    var windowWidth = $(window).width();
+    //alert("The width is " + windowWidth);
+    if (windowWidth <= 1024)
+    {
+        $("#tabs").toggle();
+    }
 	// Show sidebar
 //	$('#button-show').click(function(){
 //        $("#tabs").css('display', 'block');
