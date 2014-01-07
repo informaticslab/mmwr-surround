@@ -12,6 +12,7 @@ $(function() {
     $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-right" );
   });
+      
   </script>
     <style>
   .ui-tabs-vertical { width: 55em; }
@@ -27,7 +28,12 @@ $(function() {
     
 <body>
  <div id="wrap" style="width:1500px; margin:0 auto; ">
-     <div id="header"></div>
+     <div id="header">
+			<p>
+				<input type="button" class="dhe-input-button" value="Toggle sidebar" id="button-toggle" /> 
+			</p>         
+         
+     </div>
      <div id="body">
          
 <div id="tabs" style ="float:right; width:600px; min-height:400px; ">
@@ -311,12 +317,31 @@ empty{color:#000};@import "http://www.cdc.gov/TemplatePackage/css/B/wysiwyg/wysi
 <h1>Outbreaks of Acute Gastroenteritis Transmitted by Person-to-Person Contact &#8212; United States, 2009&#8211;2010</h1>
 <!-- this will dynamically write out the report title and date -->
 <script language="Javascript" type="text/javascript">
-<!--
-   var textOut = "";
-   textOut += '<i><h2>' +  reportTitle + '<\/h2><\/i>';
-   textOut += '<strong>' + reportDate + '<\/strong><br /><br />';
-   document.write(textOut);
-// -->
+
+$(document).ready(function(){
+
+	// Show sidebar
+//	$('#button-show').click(function(){
+//        $("#tabs").css('display', 'block');
+//        $('#button-show').text("Hide Sidebar");
+//	});
+//
+//	// Hide sidebar
+//	$('#button-hide').click(function(){
+//		$("#tabs").css('display', 'none');
+//	});
+
+	// Toggle sidebar
+	$('#button-toggle').click(
+       function(){
+		$("#tabs").toggle();
+	
+		//$('#main').toggleClass('display');
+    });
+
+});
+
+
 </script>
 
 				<p class="author-name">Mary E. Wikswo, MPH </p>
