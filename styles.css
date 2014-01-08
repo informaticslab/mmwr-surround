@@ -22,9 +22,9 @@ background-color: #f3a23f;
 
 #sub_line {background-color:#dddddc; height:1px;}
 .home_icon {float:right; clear:both; position:relative; padding:1.2em;}
-a.mmwr_text:link, a.mmwr_text:visited, a.mmwr_text:active {position:relative; top:2.5em; left:.7em; color:#ffffff; font-family:helvetica, trebuchet ms, arial, sans-serif; font-size:1.9em; text-decoration:none;}
+a.mmwr_text:link, a.mmwr_text:visited, a.mmwr_text:active {position:relative; top:2.4em; left:.7em; color:#ffffff; font-family:helvetica, trebuchet ms, arial, sans-serif; font-size:1.9em; text-decoration:none;}
 
-a.mmwr_text:hover {position:relative; top:2.5em; left:.7em; color:#ffffff; font-family:helvetica, trebuchet ms, arial, sans-serif; font-size:1.9em; text-decoration:underline;}
+a.mmwr_text:hover {position:relative; top:2.4em; left:.7em; color:#ffffff; font-family:helvetica, trebuchet ms, arial, sans-serif; font-size:1.9em; text-decoration:underline;}
 
 #icon_area {float:right; clear:both; position:relative; padding-right:1em; padding-top:.7em; }
 
@@ -32,9 +32,11 @@ h1 {font-family:helvetica, trebuchet ms, arial, sans-serif; font-size:1.7em; fon
 
 p.author-name {text-align:center; font-size:1.1em; line-height:1; }
 
+p.pane {font-weight:normal;}
+
 body {font-family: verdana, helvetica, trebuchet ms, arial, sans-serif; font-size:.8em;}
 
-h3.serial_subtitle {text-align:center;}
+h3.serial_subtitle {text-align:center; padding-top:1em; font-size:1.1em;}
 
 .bottom_info {border-style:solid; border-width:1px; border-color:#000000; padding-left:1em; padding-right:1em; }
 
@@ -46,6 +48,27 @@ li {margin-bottom:7px;}
 
 .search_type {color:#999; font-size:small;}
 
+#tabs_edit {float:right; position:relative; right:2.5em; top:2em; }
+
+#tab_text_wrap {padding: 0em .7em .5em .5em;}
+
+#tab_header {font-family:helvetica, trebuchet ms, arial, sans-serif; font-size:1.2em; color:#733b02; font-weight:bold; position:relative; top:1em; padding-bottom:1.3em;}
+
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5, #tabs-6 {width:60%; min-height:2000px; background-color:#dee6f3; border-top:solid; border-top-width:1px; border-top-color:#b3c4dd;  border-bottom:solid; border-bottom-width:1px; border-bottom-color:#b3c4dd; }
 
 
- 
+.hline {width:96%; text-align:left; height:1px; background:#b3c4dd;}
+
+.hline2 {width:96%; text-align:left; height:1px; background:#ffffff;}
+
+h4{padding-top:1.7em;}
+
+h4.serial_subtitle {padding-top:.5em;}
+
+.tab_images {border: 1px solid #696969;}
+
+
+
+a:link, a:visited, a:active {color:#03C; text-decoration:underline;}
+
+a:hover {color: #C60; text-decoration:none;}
