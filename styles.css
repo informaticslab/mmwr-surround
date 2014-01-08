@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-#content_alignment {padding-left:3%; padding-right:3%;  border-style:solid; border-width:1px; border-color:#CCC;}
+#content_alignment {padding-left:3%; padding-right:4%;  border-style:solid; border-width:1px; border-color:#CCC;}
 
 
 #header {height:96px; width:100%; 
@@ -72,3 +72,22 @@ h4.serial_subtitle {padding-top:.5em;}
 a:link, a:visited, a:active {color:#03C; text-decoration:underline;}
 
 a:hover {color: #C60; text-decoration:none;}
+
+#divOne {display: block; height: 200px; background: #000; }
+
+#pane_button {float:right; clear:both; display: block; position:relative; top:10em; }
+
+input[type=button] {
+    background-color:#dee6f3;
+	background-image: url(Images/tab2.png);
+	width:37px;
+	height:106px;
+	border:none;
+	
+    
+}
+
+input[type=button]:hover {
+    background-color:rgba(255,204,0,0.8);
+}
+
