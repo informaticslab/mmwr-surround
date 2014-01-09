@@ -57,6 +57,7 @@ li {margin-bottom:7px;}
 #tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5, #tabs-6 {width:60%; min-height:2000px; background-color:#dee6f3; border-top:solid; border-top-width:1px; border-top-color:#b3c4dd;  border-bottom:solid; border-bottom-width:1px; border-bottom-color:#b3c4dd; }
 
 
+
 .hline {width:96%; text-align:left; height:1px; background:#b3c4dd;}
 
 .hline2 {width:96%; text-align:left; height:1px; background:#ffffff;}
@@ -77,10 +78,20 @@ a:hover {color: #C60; text-decoration:none;}
 
 #pane_button {float:right; clear:both; display: block; position:relative; top:10em; }
 
-input[type=button] {
+input[type=button].open {
+    background-color:#dee6f3;
+	background-image: url(images/tab.png);
+	width:30px;
+	height:106px;
+	border:none;
+	
+    
+}
+
+input[type=button].closed {
     background-color:#dee6f3;
 	background-image: url(images/tab2.png);
-	width:37px;
+	width:30px;
 	height:106px;
 	border:none;
 	
