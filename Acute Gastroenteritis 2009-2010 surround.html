@@ -32,7 +32,7 @@ $(function() {
 
 <a name="page_top"></a>    
     
- <div id="wrap" style="width:99%; margin:0 auto; ">
+ <div id="wrap" style="width:99%; margin:0 auto;  ">
   
     
      
@@ -290,6 +290,7 @@ Gastroenteritis or infectious diarrhea is a medical condition characterized by i
 </div>
          
          <div id="main" style = "overflow:auto;">
+<!--    <div id="main" style="position:absolute;">-->
          
          <div id="header"><a href="http://www.cdc.gov/mmwr" class="mmwr_text">Morbidity and Mortality Weekly Report (<strong><i>MMWR</i></strong>)</a>
    <div class="home_icon"><a href="http://www.cdc.gov/mmwr/"><img src="images/home_icon.png" alt="MMWR Home" border="0" title="MMWR Home"></a></div> </div>  
@@ -305,7 +306,7 @@ Gastroenteritis or infectious diarrhea is a medical condition characterized by i
          
         
 
-<div id="content">
+<div id="content" >
 <!-- InstanceBeginEditable name="local-options-horizontal" -->
 <div class="pageOptions-horizontal">
   
@@ -333,24 +334,32 @@ $(document).ready(function(){
     if (windowWidth <= 1200)
     {
         closePane();
-    }
-	
+        //hardenMainWindow();
+    }	
 
 $(window).resize(setDivVisibility);
 $('#button-toggle').click(togglePane);
 
+    
 function setDivVisibility()
     {
         var myClass = $("#button-toggle").attr("class");
          if (($(window).width()) < '1200')
          { 
              closePane();
+             //hardenMainWindow();
          } 
         else 
          { 
              openPane();
          } 
     }	
+    
+    function hardenMainWindow()
+    {
+        $("#content").css('position', 'absolute');
+        $("#content").css('width', $(window).width());
+    }
     function openPane()
     {
          var myClass = $("#button-toggle").attr("class");
