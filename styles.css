@@ -95,9 +95,15 @@ input[type=button].closed {
 	background-repeat: no-repeat;
 	width:37px;
 	height:106px;
-	border:none;
-	
-    
+	border:none;    
+}
+
+input[type=button].open:hover {
+   background-image: url(images/tab_hover.png);
+}
+
+input[type=button].closed:hover {
+   background-image: url(images/tab2_hover.png);
 }
 
 
