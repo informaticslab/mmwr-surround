@@ -81,7 +81,8 @@ a:hover {color: #C60; text-decoration:none;}
 input[type=button].open {
     background-color:#dee6f3;
 	background-image: url(images/tab.png);
-	width:30px;
+	background-repeat: no-repeat;
+	width:37px;
 	height:106px;
 	border:none;
 	
@@ -91,14 +92,13 @@ input[type=button].open {
 input[type=button].closed {
     background-color:#dee6f3;
 	background-image: url(images/tab2.png);
-	width:30px;
+	background-repeat: no-repeat;
+	width:37px;
 	height:106px;
 	border:none;
 	
     
 }
 
-input[type=button]:hover {
-    background-color:rgba(255,204,0,0.8);
-}
+
 
