@@ -341,12 +341,12 @@ $(document).ready(function(){
 //}
 $(window).resize(setDivVisibility);
 function setDivVisibility(){
+    var myClass = $("#button-toggle").attr("class");
      if (($(window).width()) < '1200'){ 
-          var myClass = $("#button-toggle").attr("class");
+          
      $('#tabs').css('display','none');
-    // $('#tabs').css('position','absolute');
-    
-  //alert("myClass was " + myClass);
+   //  $('#content').css('position','absolute');
+
    if (myClass == "open")
    {
        $("#button-toggle").addClass("closed").removeClass("open");
@@ -365,7 +365,6 @@ function setDivVisibility(){
   $('#button-toggle').click(
        function(){
   var myClass = $("#button-toggle").attr("class");
-  //alert("myClass was " + myClass);
    if (myClass == "open")
    {
        $("#button-toggle").addClass("closed").removeClass("open");
