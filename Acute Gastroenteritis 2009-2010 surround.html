@@ -332,50 +332,58 @@ $(document).ready(function(){
     //alert("The width is " + windowWidth);
     if (windowWidth <= 1200)
     {
-        $("#tabs").toggle();
+        closePane();
     }
 	
-//function swapTabs(){
-//    $("#tabs").toggle();
-//    if 
-//}
-$(window).resize(setDivVisibility);
-function setDivVisibility(){
-    var myClass = $("#button-toggle").attr("class");
-     if (($(window).width()) < '1200'){ 
-          
-     $('#tabs').css('display','none');
-   //  $('#content').css('position','absolute');
 
-   if (myClass == "open")
-   {
-       $("#button-toggle").addClass("closed").removeClass("open");
-   }
-    
-     } else { 
+$(window).resize(setDivVisibility);
+$('#button-toggle').click(togglePane);
+
+function setDivVisibility()
+    {
+        var myClass = $("#button-toggle").attr("class");
+         if (($(window).width()) < '1200')
+         { 
+             closePane();
+         } 
+        else 
+         { 
+             openPane();
+         } 
+    }	
+    function openPane()
+    {
+         var myClass = $("#button-toggle").attr("class");
+         $('#tabs').css('display','block');
          if(myClass == "closed")
+         {
+            $("#button-toggle").addClass("open").removeClass("closed");
+         }
+    }
+	function closePane()
+    {
+        var myClass = $("#button-toggle").attr("class");
+        if (myClass == "open")
         {
-         $("#button-toggle").addClass("open").removeClass("closed");
+            $("#button-toggle").addClass("closed").removeClass("open");
         }
-     $('#tabs').css('display','block');  
-     } 
- }	
-	
+         $('#tabs').css('display','none');
+    }
+    function togglePane()
+    {
+        var myClass = $("#button-toggle").attr("class");
+        if (myClass == "open")
+        {
+            $("#button-toggle").addClass("closed").removeClass("open");
+        }
+        else if (myClass == "closed")
+        {
+            $("#button-toggle").addClass("open").removeClass("closed");
+        }
+        $("#tabs").toggle();
+    }
         
-  $('#button-toggle').click(
-       function(){
-  var myClass = $("#button-toggle").attr("class");
-   if (myClass == "open")
-   {
-       $("#button-toggle").addClass("closed").removeClass("open");
-   }
-   else if (myClass == "closed")
-   {
-       $("#button-toggle").addClass("open").removeClass("closed");
-   }
-   $("#tabs").toggle();
-   
-   });
+
 
 });
 
