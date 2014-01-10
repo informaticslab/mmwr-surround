@@ -107,4 +107,18 @@ input[type=button].closed:hover {
 }
 
 
+.mainDivPC {
+    overflow:auto;
+}
 
+.mainDivTabPhone {
+    position:absolute;
+}
+
+.sidebarDivPC{
+    
+}
+
+.sidebarDivTabPhone {
+    
+}
