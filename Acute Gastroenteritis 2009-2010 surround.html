@@ -79,6 +79,7 @@ $(function() {
 
 $(document).ready(function(){
     var windowWidth = $(window).width();
+    var sidebarWidth = $("#tabs").width();
     //alert("The width is " + windowWidth);
     if (windowWidth <= 1200)
     {
@@ -92,7 +93,7 @@ $('#button-toggle').click(togglePane);
     
 function setDivVisibility()
     {
-        var myClass = $("#button-toggle").attr("class");
+        //var myClass = $("#button-toggle").attr("class");
          if (($(window).width()) < '1200')
          { 
              closePane();
@@ -108,12 +109,14 @@ function setDivVisibility()
     function hardenMainWindow()
     {
         $("#main").addClass("mainDivTabPhone").removeClass("mainDivPC");
-        $("#main").css('width', $(window).width());
+        $("tabs").addClass("sidebarDivTabPhone").removeClass("sidebarDivPC");
+        $("#main").css('width', windowWidth);
     }
     function softenMainWindow()
     {
          $("#main").addClass("mainDivPC").removeClass("mainDivTabPhone");
-         $("#main").css('width', '');
+         $("tabs").addClass("sidebarDivPC").removeClass("sidebarDivTabPhone");
+         //$("#main").css('width', windowWidth-sidebarWidth);
     }
     function openPane()
     {
@@ -1240,7 +1243,8 @@ Government Printing Office (GPO), Washington, DC 20402-9371; telephone: (202) 51
 
     <!-- /end #wrapper-inner --></div>
 <!-- /end #wrapper --></div>         
-<div id="tabs" style="float:right; width:525px; min-width:525px; min-height:400px; border:none;">
+<!--<div id="tabs" style="float:right; width:525px; min-width:525px; min-height:400px; border:none;">-->
+<div id="tabs" class="sidebarDivPC">
   <div id="tabs_edit">
   <ul>
     <li><a href="#tabs-1">Definitions</a></li>
